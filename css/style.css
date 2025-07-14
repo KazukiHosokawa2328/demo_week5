@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 共通パーツ */
+.section-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+/* ヘッダー */
+
+.header {
+  background-color: #bea574;
+  position: fixed;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 820px;
+}
+
+.header-logo > img {
+  width: 100px;
+}
+
+.header-title-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-title-link:hover {
+  opacity: 0.5;
+}
+
+.header-nav {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-nav-link:hover {
+  opacity: 0.5;
+}
+
+.keyvisual {
+  background-image: url(../img/slide_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* about */
+
+.about-wrapper {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.sub-title-about {
+  color: red;
+  font-size: 3rem;
+}
+
+/* access */
+.access-wrapper {
+  margin: 0 auto;
+  width: 600px;
+}
+
+/* form */
+.form-wrapper {
+  margin: 0 auto 50px;
+  width: 300px;
+}
+
+form input,
+select {
+  width: 300px;
+  padding: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.form-wrapper label {
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.form-wrapper label:first-child {
+  margin-top: 0;
+}
+
+.form-required {
+  color: red;
+  font-size: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.form-optional {
+  color: gray;
+  font-size: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.form-submit {
+  margin-top: 10px;
+}
+
+/* footer */
+.footer {
+  background-color: #bea574;
+  width: 100%;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.footer-logo > img {
+  width: 100px;
+}
