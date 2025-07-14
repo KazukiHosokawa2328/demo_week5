@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -28,7 +32,40 @@
     </header>
     <main>
       <!-- Swiper.jsでキービジュアルは実装予定 -->
-      <div class="keyvisual"></div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class="card__image"
+              src="./img/slide_1.jpg"
+              alt=""
+              width="680"
+              height="400"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="card__image"
+              src="./img/slide_2.jpg"
+              alt=""
+              width="680"
+              height="400"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="card__image"
+              src="./img/slide_3.jpg"
+              alt=""
+              width="680"
+              height="400"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <!-- 小見出しの文章 -->
       <section id="about">
         <div class="about-wrapper">
@@ -138,5 +175,8 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
