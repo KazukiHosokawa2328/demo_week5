@@ -1,28 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-container">
-        <h1><img src="" alt="" /></h1>
-        <nav>
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a href="#" class="header-nav-link">スケジュール</a>
-            </li>
-            <li class="header-nav-item">
-              <a href="#" class="header-nav-link">アクセス</a>
-            </li>
-            <li class="header-nav-item">
-              <a href="#" class="header-nav-link">席予約</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- ヘッダー　後ほど切り出す -->
+		<header class="header">
+			<div class="header-container">
+				<h1><img src="" alt="" /></h1>
+				<nav>
+					<ul class="header-nav-list">
+						<li class="header-nav-item">
+							<a href="#" class="header-nav-link">スケジュール</a>
+						</li>
+						<li class="header-nav-item">
+							<a href="#" class="header-nav-link">アクセス</a>
+						</li>
+						<li class="header-nav-item">
+							<a href="#" class="header-nav-link">席予約</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- Swiper.jsでキービジュアルは実装予定 -->
+			<div class="keyvisual"></div>
+			<!-- 小見出しの文章 -->
+			<section>
+				<h2 class="title">今年も始まる夏祭り</h2>
+			</section>
+			<!-- スケジュールのコンテンツ　js出だしわける -->
+			<section class="schedule">
+				<div class="schedule-container">
+					<h2 class="sub-title">スケジュール</h2>
+					<ul>
+						<li>9月1日</li>
+						<li>9月2日</li>
+						<li>9月3日</li>
+					</ul>
+				</div>
+			</section>
+			<!-- アクセス部分、googlemap導入 -->
+			<section class="access">
+				<div>
+					<h2 class="sub-title">アクセス</h2>
+					<iframe src="" frameborder="0"></iframe>
+				</div>
+			</section>
+			<!-- 席予約 -->
+			<section class="reserve">
+				<div>
+					<h2 class="sub-title">席予約</h2>
+					<form action="" class="form">
+						<label for="name">お名前<span>＊必須</span></label>
+						<input
+							id="name"
+							type="text"
+							name="name"
+							placeholder="例)田中 太郎"
+							required
+						/>
+						<label for="seat">席の場所<span>＊必須</span></label>
+						<select name="seat" id="seat" required>
+							<option value="SS">SS</option>
+							<option value="S">S</option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+						</select>
+						<label for="email">メールアドレス<span>＊必須</span></label>
+						<input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="例)abcd123@example.com"
+							required
+						/>
+						<label for="tel">電話番号<span>＊任意</span></label>
+						<input
+							id="tel"
+							type="tel"
+							name="tel"
+							placeholder="例)09012345678"
+						/>
+						<div class="form-submit">
+							<input type="submit" value="送信" />
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- フッター　後ほど切り出す -->
+			<footer class="footer"></footer>
+		</main>
+	</body>
 </html>
