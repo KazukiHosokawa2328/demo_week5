@@ -75,25 +75,17 @@ a {
 
 /* swiper */
 .swiper {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 800px; /* 好きな高さ */
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #fff;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* background: #bea574; */
   display: flex;
+  /* align-items: center; */
   justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 /* 前へ次への矢印カスタマイズ */
@@ -102,6 +94,14 @@ a {
   height: 50px;
   width: 50px;
 }
+
+.swiper-button-next {
+  right: 60px;
+}
+.swiper-button-prev {
+  left: 60px;
+}
+
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -120,35 +120,17 @@ a {
 .swiper-button-next::after {
   background-image: url(../slide-btn-next.svg);
 }
-
-/* ページネーションの余白 */
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  margin: 12px;
-}
-/* ページネーションのサイズと色 */
-.swiper-pagination-bullet {
-  background-color: #bea574;
-  height: 16px;
-  width: 16px;
-}
 /* 画像サイズ調整 */
 .swiper-slide img {
-  /* height: auto; */
+  height: auto;
   width: 100%;
 }
 
-.keyvisual {
-  /* background-image: url(../img/slide_1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
+.swiper-pagination-bullet {
+  background: #bea574;
+  width: 16px;
+  height: 16px;
+  margin: 0 12px !important;
 }
 
 /* about */
@@ -158,9 +140,46 @@ a {
   width: 600px;
 }
 
+.about-title {
+  font-size: 24px;
+}
+
 .sub-title-about {
   color: red;
-  font-size: 3rem;
+  font-size: 60px;
+}
+
+/* schedule */
+.schedule-list-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+  width: 900px;
+}
+
+.schedule-list {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #bea574;
+}
+
+.schedule-item a {
+  display: block;
+  background-color: #e1e1ea;
+  box-sizing: border-box;
+  font-weight: bold;
+  padding: 10px;
+  width: 300px;
+}
+
+.schedule-item.selected a {
+  background-color: #bea574;
+  color: #fff;
+}
+
+.schedule-contents {
+  padding: 30px;
 }
 
 /* access */
