@@ -19,9 +19,9 @@ a {
 /* 共通パーツ */
 .section-title {
   text-align: center;
-  margin-bottom: 15px;
-  font-size: 2rem;
-  margin-top: 50px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  margin-top: 100px;
 }
 
 /* ヘッダー */
@@ -142,6 +142,7 @@ a {
 
 .about-title {
   font-size: 24px;
+  font-weight: bold;
 }
 
 .sub-title-about {
@@ -150,6 +151,8 @@ a {
 }
 
 /* schedule */
+.schedule-title {
+}
 .schedule-list-wrapper {
   text-align: center;
   margin: 0 auto;
@@ -228,6 +231,12 @@ select {
 
 .form-submit {
   margin-top: 10px;
+}
+
+.form-submit > input {
+  opacity: 0.5;
+  color: #fff;
+  background-color: #bea574;
 }
 
 /* footer */
