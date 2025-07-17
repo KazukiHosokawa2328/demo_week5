@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+<?php 
+$title = 'Top page';
+// $description = 'top page';
+// $is_home = true;
+include './inc/head.php';
+?>
   </head>
   <body>
-    <!-- ヘッダー　後ほど切り出す -->
-    <header class="header">
-      <div class="header-container">
-        <h1 class="header-logo"><img src="./img/logo.png" alt="" /></h1>
-        <nav>
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a href="#" class="header-nav-link">スケジュール</a>
-            </li>
-            <li class="header-nav-item">
-              <a href="#" class="header-nav-link">アクセス</a>
-            </li>
-            <li class="header-nav-item">
-              <a href="#" class="header-nav-link">席予約</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- ヘッダー-->
+    <?php include './inc/header.php'; ?>
     <main>
       <!-- Swiper.js導入 -->
       <div class="swiper mySwiper">
@@ -56,7 +28,7 @@
           </h2>
         </div>
       </section>
-      <!-- スケジュールのコンテンツ　js出だしわける -->
+      <!-- スケジュールのコンテンツ -->
       <section id="schedule">
         <div class="schedule-wrapper">
           <h2 class="schedule-title section-title">スケジュール</h2>
@@ -86,7 +58,7 @@
           </div>
         </div>
       </section>
-      <!-- アクセス部分、googlemap導入 -->
+<!-- アクセス -->
       <section class="access">
         <div class="access-wrapper">
           <h2 class="section-title">アクセス</h2>
@@ -152,12 +124,8 @@
           </form>
         </div>
       </section>
-      <!-- フッター　後ほど切り出す -->
-      <footer class="footer">
-        <div class="footer-wrapper">
-          <h2 class="footer-logo"><img src="./img/logo.png" alt="" /></h2>
-        </div>
-      </footer>
+      <!-- footer -->
+    <?php include './inc/footer.php'; ?>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
