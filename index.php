@@ -78,7 +78,7 @@ include './inc/head.php';
       <section class="reserve">
         <div class="reserve-wrapper">
           <h2 class="section-title">席予約</h2>
-          <form action="./confirm.html" class="form" method="post">
+          <form action="./confirm.php" class="form" method="POST">
             <div class="form-wrapper">
               <label for="name"
                 >お名前<span class="form-required">*必須</span></label

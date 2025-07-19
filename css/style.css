@@ -255,3 +255,54 @@ select {
 .footer-logo > img {
   width: 100px;
 }
+
+/* confirm page */
+.confirm {
+  margin: 20px auto;
+  width: 50vw;
+  text-align: center;
+}
+
+.confirm-title {
+  margin-bottom: 30px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 150px;
+}
+
+dt {
+  width: 30%;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+dd {
+  width: 70%;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.confirm-btn {
+  padding: 5px 10px;
+  margin: 0 80px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.confirm-btn-back {
+  background-color: lightgray;
+}
+.confirm-btn-send {
+  background-color: #bea574;
+}
+/* thanks page */
+.thanks-text {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px;
+}
