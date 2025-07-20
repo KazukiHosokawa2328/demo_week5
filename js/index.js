@@ -19,7 +19,7 @@ $(function () {
   $("a[href^='#']:not([href='#']):not(.js-tab-link)").click(function (e) {
     e.preventDefault();
     let target = $($(this).attr("href")).offset().top;
-    $("html,body").animate({ scrollTop: target - 53 }, "slow");
+    $("html,body").animate({ scrollTop: target - 80 }, "slow");
   });
 
   //コンテンツ切り替え
@@ -49,7 +49,7 @@ $(function () {
   });
 
   //ハンバーガーメニュー
-    $("#js-button-drawer").on("click", function () {
+  $("#js-button-drawer").on("click", function () {
     $(this).toggleClass("active");
     $(".drawer").slideToggle("fast");
     $("body").toggleClass("is-fixed");

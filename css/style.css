@@ -34,6 +34,11 @@ body.is-fixed {
 .header {
   background-color: #bea574;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
 .header-container {
@@ -109,6 +114,7 @@ body.is-fixed {
   margin: 0 auto;
   box-sizing: border-box;
   background: #fff;
+  margin-top: 73px;
 }
 
 .swiper-slide {
@@ -286,6 +292,7 @@ select {
 
 .reserve-btn {
   opacity: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* footer */
@@ -351,6 +358,13 @@ dd:last-of-type {
 }
 .confirm-btn-send {
   background-color: #bea574;
+}
+
+.confirm-btn-back:hover,
+.confirm-btn-send:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
 }
 /* thanks page */
 .thanks-text {
