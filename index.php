@@ -1,7 +1,5 @@
 <?php 
 $title = 'Top page';
-// $description = 'top page';
-// $is_home = true;
 include './inc/head.php';
 ?>
   </head>
@@ -16,9 +14,9 @@ include './inc/head.php';
       <!-- Swiper.js導入 -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./img/slide_1.jpg" alt="" /></div>
-          <div class="swiper-slide"><img src="./img/slide_2.jpg" alt="" /></div>
-          <div class="swiper-slide"><img src="./img/slide_3.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/slide_1.jpg" alt="花火が打ちあがる様子" /></div>
+          <div class="swiper-slide"><img src="./img/slide_2.jpg" alt="盆踊り会場の様子" /></div>
+          <div class="swiper-slide"><img src="./img/slide_3.jpg" alt="夜店の並ぶ通り" /></div>
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>

@@ -2,7 +2,7 @@
         <div class="footer-wrapper">
           <h2 >
             <a href="./index.php">
-              <img src="./img/logo.png" alt="" class="footer-logo" />
+              <img src="./img/logo.png" alt="ダミーサイト" class="footer-logo" />
             </a>
           </h2>
         </div>

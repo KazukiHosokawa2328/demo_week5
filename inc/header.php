@@ -2,15 +2,14 @@
   <div class="header-container">
     <h1>
       <a href="./index.php"
-        ><img src="./img/logo.png" alt="" class="header-logo"
+        ><img src="./img/logo.png" alt="ダミーサイト" class="header-logo"
       /></a>
     </h1>
     <nav>
       <ul class="header-nav-list">
         <li class="header-nav-item">
           <a href="<?php echo $schedule ?>" class="header-nav-link"
-            >スケジュール</a
-          >
+            >スケジュール</a>
         </li>
         <li class="header-nav-item">
           <a href="<?php echo $access ?>" class="header-nav-link">アクセス</a>

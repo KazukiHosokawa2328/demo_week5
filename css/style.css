@@ -33,7 +33,6 @@ body.is-fixed {
 
 .header {
   background-color: #bea574;
-  /* position: fixed; */
   width: 100%;
 }
 
@@ -89,7 +88,7 @@ body.is-fixed {
   width: 100%;
   background-color: #bea574;
   overflow-y: auto;
-  z-index: 10;
+  z-index: 99999 !important;
   display: none;
 }
 
@@ -105,7 +104,7 @@ body.is-fixed {
 
 /* swiper */
 .swiper {
-  width: 100vw;
+  width: 100%;
   max-height: 800px;
   margin: 0 auto;
   box-sizing: border-box;
