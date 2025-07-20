@@ -6,7 +6,11 @@ include './inc/head.php';
 ?>
 </head>
 <body>
-    <?php include './inc/header.php'; ?>
+    <?php
+    $schedule = "./index.php#schedule";
+    $access = "./index.php#access";
+    $reserve = "./index.php#reserve";
+    include './inc/header.php'; ?>
     <main>
             <p class="thanks-text">お問い合わせありがとうございました</p>
     </main>

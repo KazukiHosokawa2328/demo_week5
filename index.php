@@ -7,7 +7,11 @@ include './inc/head.php';
   </head>
   <body>
     <!-- ヘッダー-->
-    <?php include './inc/header.php'; ?>
+        <?php
+        $schedule = "#schedule";
+        $access = "#access";
+        $reserve = "#reserve";
+        include './inc/header.php'; ?>
     <main>
       <!-- Swiper.js導入 -->
       <div class="swiper mySwiper">
@@ -59,15 +63,12 @@ include './inc/head.php';
         </div>
       </section>
 <!-- アクセス -->
-      <section class="access">
+      <section id="access" class="access">
         <div class="access-wrapper">
           <h2 class="section-title">アクセス</h2>
-          <p class="address">〒771-1154 徳島県徳島市応神町東貞方南川淵</p>
+          <p class="access-address">〒771-1154 徳島県徳島市応神町東貞方南川淵</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.533676415667!2d134.52068237629308!3d34.10708476483146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553725a43298fb3%3A0x1bc47188f8f9226a!2z44CSNzcxLTExNTQg5b6z5bO255yM5b6z5bO25biC5b-c56We55S65p2x6LKe5pa55Y2X5bed5re1!5e0!3m2!1sja!2sjp!4v1752499282555!5m2!1sja!2sjp"
-            width="600"
-            height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -75,7 +76,7 @@ include './inc/head.php';
         </div>
       </section>
       <!-- 席予約 -->
-      <section class="reserve">
+      <section id="reserve" class="reserve">
         <div class="reserve-wrapper">
           <h2 class="section-title">席予約</h2>
           <form action="./confirm.php" class="form" method="POST">
@@ -94,6 +95,7 @@ include './inc/head.php';
                 >席の場所<span class="form-required">*必須</span></label
               >
               <select name="seat" id="seat" required>
+                <option value="">---</option>
                 <option value="SS席">SS席</option>
                 <option value="S席">S席</option>
                 <option value="A席">A席</option>
@@ -116,9 +118,11 @@ include './inc/head.php';
                 type="tel"
                 name="tel"
                 placeholder="例)09012345678"
+                pattern="^[0-9]{10,11}$"
+                maxlength="11"
               />
               <div class="form-submit">
-                <input type="submit" value="送信" />
+                <input type="submit" value="送信" disabled class="form-btn"/>
               </div>
             </div>
           </form>
