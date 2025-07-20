@@ -1,9 +1,9 @@
       <footer class="footer">
         <div class="footer-wrapper">
-          <h2 >
-            <a href="./index.php">
+          <div>
+            <a href="./index.php" aria-label="トップページに戻る">
               <img src="./img/logo.png" alt="ダミーサイト" class="footer-logo" />
             </a>
-          </h2>
+          </div>
         </div>
       </footer>

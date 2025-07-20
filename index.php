@@ -2,11 +2,11 @@
 $title = 'Top page';
 include './inc/head.php';
 ?>
-  </head>
+
   <body>
     <!-- ヘッダー-->
         <?php
-        $schedule = "#schedule";
+        $schedule = "#schedule"; //以下３つの変数はヘッダーリンクで使用
         $access = "#access";
         $reserve = "#reserve";
         include './inc/header.php'; ?>
@@ -110,7 +110,7 @@ include './inc/head.php';
                 placeholder="例)abcd123@example.com"
                 required
               />
-              <label for="tel">電話番号<span form-optional>*任意</span></label>
+              <label for="tel">電話番号<span class="form-optional">*任意</span></label>
               <input
                 id="tel"
                 type="tel"
@@ -127,8 +127,8 @@ include './inc/head.php';
         </div>
       </section>
       <!-- footer -->
-    <?php include './inc/footer.php'; ?>
     </main>
+    <?php include './inc/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/index.js"></script>

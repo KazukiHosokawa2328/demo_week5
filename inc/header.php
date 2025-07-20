@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-container">
     <h1>
-      <a href="./index.php"
+      <a href="./index.php" aria-label="トップページに戻る"
         ><img src="./img/logo.png" alt="ダミーサイト" class="header-logo"
       /></a>
     </h1>
@@ -20,7 +20,7 @@
       </ul>
       <!-- ハンバーガーメニュー -->
       <div class="header-button">
-        <button type="button" class="button-drawer" id="js-button-drawer">
+        <button type="button" class="button-drawer" id="js-button-drawer" aria-label="メニューを開閉する">
           <span class="button-drawer-bar"></span>
           <span class="button-drawer-bar"></span>
           <span class="button-drawer-bar"></span>
