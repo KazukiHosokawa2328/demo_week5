@@ -484,12 +484,14 @@ dd:last-of-type {
     width: 90%;
     display: block;
     text-align: left;
-    margin-bottom: 8px;
+  }
+  dt,
+  dt:last-of-type {
+    margin-bottom: 0;
   }
   dd {
     font-weight: bold;
-    margin-top: 16px;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
   }
   .confirm-btn {
     margin: 16px 0 0;
