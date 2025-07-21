@@ -12,7 +12,7 @@ include './inc/head.php';
     $reserve = "./index.php#reserve";
     include './inc/header.php'; ?>
     <main>
-            <p class="thanks-text">お問い合わせありがとうございました</p>
+        <p class="thanks-text">お問い合わせありがとうございました</p>
     </main>
     <?php include './inc/footer.php'; ?>
 

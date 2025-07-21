@@ -338,9 +338,11 @@ dt:last-of-type {
   margin-bottom: 20px;
 }
 dd {
-  width: 70%;
+  width: 60%;
+  /* margin-right: 10px; */
   margin-bottom: 48px;
   text-align: left;
+  word-break: break-all;
 }
 dd:last-of-type {
   margin-bottom: 20px;
@@ -370,7 +372,7 @@ dd:last-of-type {
 .thanks-text {
   text-align: center;
   font-weight: bold;
-  margin: 30px;
+  margin: 120px auto 50px;
 }
 
 @media screen and (max-width: 960px) {
@@ -401,77 +403,97 @@ dd:last-of-type {
   }
 
   /* confirm.php */
+  .confirm {
+    width: 90%;
+  }
   dl {
     margin-left: 50px;
     max-width: 600px;
   }
   dt {
     width: 40%;
-    text-align: right;
+    text-align: center;
   }
   dd {
     width: 60%;
     text-align: center;
   }
+  .confirm-btn {
+    margin: 0 40px;
+  }
+}
 
-  @media screen and (max-width: 431px) {
-    .header-title {
-      padding-left: 10px;
-      font-size: 1rem;
-    }
+@media screen and (max-width: 431px) {
+  .header-title {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
 
-    .header-nav-list {
-      display: none;
-    }
+  .header-nav-list {
+    display: none;
+  }
 
-    .header-button {
-      display: block;
-    }
+  .header-button {
+    display: block;
+  }
 
-    .button-drawer {
-      width: 30px;
-      height: 30px;
-      background: none;
-      border: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 7px;
-      cursor: pointer;
-    }
+  .button-drawer {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+  }
 
-    .button-drawer span {
-      display: block;
-      width: 100%;
-      height: 3px;
-      background: #fff;
-      border-radius: 1px;
-    }
+  .button-drawer span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 1px;
+  }
 
-    .button-drawer.active span:nth-child(1) {
-      transform: translateY(10px) rotate(45deg);
-    }
-    .button-drawer.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .button-drawer.active span:nth-child(3) {
-      transform: translateY(-11px) rotate(-45deg);
-    }
-    /* swiper button */
-    .swiper-button-next {
-      right: 15px;
-    }
-    .swiper-button-prev {
-      left: 15px;
-    }
+  .button-drawer.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .button-drawer.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .button-drawer.active span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  /* swiper button */
+  .swiper-button-next {
+    right: 15px;
+  }
+  .swiper-button-prev {
+    left: 15px;
+  }
 
-    /* confirm.php */
-    dl {
-      margin-left: 20px;
-      max-width: 430px;
-    }
-    .confirm-btn {
-      margin: 0 40px;
-    }
+  /* confirm.php */
+  dl {
+    max-width: 90%;
+    display: block;
+  }
+  dt,
+  dd {
+    width: 90%;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  dd {
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 2px;
+  }
+  .confirm-btn {
+    margin: 16px 0 0;
+    width: 50%;
+    box-sizing: border-box;
   }
 }
