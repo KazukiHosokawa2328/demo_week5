@@ -22,6 +22,13 @@ $(function () {
     $("html,body").animate({ scrollTop: target - 80 }, "slow");
   });
 
+  if (window.location.hash) {
+    const id = window.location.hash;
+    if ($(id).length) {
+      $("html,body").scrollTop($(id).offset().top - 80);
+    }
+  }
+
   //コンテンツ切り替え
   $('.schedule-contents p[class != "schedule-contents-first"]').hide();
   $(".js-tab-link").click(function (e) {
